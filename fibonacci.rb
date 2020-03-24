@@ -3,7 +3,19 @@ require 'pry'
 # but you may remove it if you like.
 
 def fibonacci(n)
-  # your code here :)
+  i = 2
+  array = [ 1, 1 ]
+  while i <= n-1
+    value = array[-1] + array[-2]
+    array << value
+    i += 1 
+  end
+   array[n-1]
 end
 
-Pry.start
+fibonacci(9)
+binding.pry
+ 
+#112358 13
+
+#Pry.startru
